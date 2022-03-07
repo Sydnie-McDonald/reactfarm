@@ -6,17 +6,19 @@ import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import Main from './components/Main/Main';
 //Importing background to set background image// 
-import background from '../../background.png';
+import background from './background.png';
 
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Main>
+    <div className="App" style={{ backgroundImage: `url(${background})` }}>
+      <div className='animal'>
+        <Header />
+        <Main>
 
-      </Main>
-      <Footer />
+        </Main>
+        <Footer />
+      </div>
     </div>
   );
 }
